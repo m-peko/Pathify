@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnStartTracking"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/BtnStartTrackingStyle"
+            android:textColor="@drawable/ButtonText"
+            android:textStyle="bold"
+            android:text="START TRACKING" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="bottom">
+            <Button
+                android:id="@+id/btnSOS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:background="@drawable/BtnSosStyle"
+                android:textColor="@drawable/ButtonText"
+                android:textStyle="bold"
+                android:text="SOS" />
+            <ImageButton
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:src="@drawable/CameraIcon"
+                android:background="@drawable/BtnTakePhotoStyle" />
+            <Button
+                android:id="@+id/btnStopTracking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:background="@drawable/BtnStopTrackingStyle"
+                android:textColor="@drawable/ButtonText"
+                android:textStyle="bold"
+                android:text="END" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
